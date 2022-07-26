@@ -2,6 +2,8 @@
 @import 'global/color';
 @import 'global/reset';
 @import 'components/particles';
+@import 'components/pulse';
+@import 'utilities/z_index.scss';
 
 #solar_system_wrapper{
     z-index: 100;
@@ -9,4 +11,18 @@
 #form_wrapper{
     z-index: 100;
 }
+#sound_effect_button{
+    transform: rotate(-30deg);
+    border: 0!important;
+    // &:hover{
+    //     color: #020917!important;
+    // }
+}
 
+.disable{
+    color:#dc143c!important;
+    &:hover{
+        color:#eb3b5e!important;
+        transform: scale(1.09);
+    }
+}
