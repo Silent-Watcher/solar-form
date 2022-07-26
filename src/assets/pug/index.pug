@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    include includes/_head
+    include includes/_body
+        #particles-js
+        .container-fluid 
+            .container 
+                main.row.d-flex.justify-content-center.align-items-center   
+                    section.col-6#solar_system_wrapper 
+                        img.img-fluid(src="assets/img/solar-system-animation.svg", alt="solar_system")
+                    section.col-6#form_wrapper
+                        form.text-white(action="") form here!
+    include includes/_scripts

@@ -1,0 +1,31 @@
+body {
+  background-color: #020917;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #020917;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* ---- particles.js container ---- */
+}
+#particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+#solar_system_wrapper {
+  z-index: 100;
+}
+
+#form_wrapper {
+  z-index: 100;
+}/*# sourceMappingURL=style.css.map */
