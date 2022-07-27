@@ -133,6 +133,7 @@ particlesJS('particles-js', {
 // turn on and off the sound effect
 audio_btn.addEventListener('click', function () {
   if (!this.classList.contains('disable')) {
+    this.classList.remove('pulse');
     this.classList.add('disable', 'text-danger', 'bg-transparent');
     this.firstChild.classList.add('fa-volume-xmark');
     audio.muted = true;
