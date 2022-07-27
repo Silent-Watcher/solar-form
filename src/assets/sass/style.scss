@@ -4,6 +4,7 @@
 @import 'components/particles';
 @import 'components/pulse';
 @import 'utilities/z_index.scss';
+@import 'components/form';
 
 #solar_system_wrapper{
     z-index: 100;
@@ -14,9 +15,9 @@
 #sound_effect_button{
     transform: rotate(-30deg);
     border: 0!important;
-    // &:hover{
-    //     color: #020917!important;
-    // }
+    &:hover{
+        color: #232323!important;
+    }
 }
 
 .disable{

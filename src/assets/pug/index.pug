@@ -3,16 +3,16 @@ html(lang="en")
     include includes/_head
     include includes/_body
         #particles-js
-        audio(src="assets/audio/spaceship-cruising-ufo-7176 (1).mp3" loop)
+        audio(src="assets/audio/spaceship-cruising-ufo-7176 (1).mp3" loop controlsList="nodownload")
         .container-fluid 
             .container
                 .row.p-2
                     .z-100.p-2#sound_effect 
-                        button.pulse.btn.btn-secondary.btn-outline-warning.rounded-circle.btn-lg.z-100.text-white#sound_effect_button( data-bs-toggle="tooltip" data-bs-title="Do you hear that voice? 😐")
+                        button.btn.btn-outline-warning.rounded-circle.btn-lg.z-100.text-white#sound_effect_button( data-bs-toggle="tooltip" data-bs-title="Do you hear that voice? 😐")
                             i.fa-solid.fa-volume-high
-                main.row.d-flex.justify-content-center.align-items-center   
-                    section.user-select-none.col-6.z-100#solar_system_wrapper 
+                main.row.d-flex.justify-content-center.align-items-center  
+                    section.d-none.d-lg-block.col-lg-6.col-xl-7.h-100.user-select-none.z-100#solar_system_wrapper 
                         img.img-fluid(src="assets/img/solar-system-animation.svg", alt="solar_system")
-                    section.col-6.z-100#form_wrapper
-                        form.text-white(action="") form here!
+                    section.col-12.col-lg-6.col-xl-5.align-self-start.z-100#form_wrapper
+                            include includes/components/_form
     include includes/_scripts

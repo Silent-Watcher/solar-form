@@ -1,0 +1,77 @@
+main#form_container.position-relative.w-100
+  form#signup__form.animate__animated.d-flex.justify-content-center.flex-column.position-absolute.rounded.p-4.text-info(action='' method='post' autocomplete='off')
+    section#signup__form__header.d-flex.justify-content-between.align-items-center
+      h2#signup__form__heading.user-select-none.animate__animated.animate__tada.animate__delay-1s signUp
+      #signup__form__social__buttons
+        button.btn.btn-info
+          a.text-white(tabindex='-1' href='#')
+            i.fa-brands.fa-google
+        button.btn.btn-info
+          a.text-white(tabindex='-1' href='#')
+            i.fa-brands.fa-facebook-f
+        button.btn.btn-info
+          a.text-white(tabindex='-1' href='#')
+            i.fa-brands.fa-github
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      input#signup__form__name__input.char_input(type='text' name='' placeholder='enter your username' required='')
+      label.position-absolute.char_label(for='signup__form__name__input') Username
+      i.position-absolute.fa-solid.fa-user.form_icon
+      i.fa-solid.fa-circle-check.check_icon.ms-1(hidden='')
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      input#signup__form__email__input.char_input(type='email' name='' placeholder='enter your email' required='')
+      label.position-absolute.char_label(for='signup__form__email__input') Email
+      i.position-absolute.fa-solid.fa-at.form_icon
+      i.fa-solid.fa-circle-check.check_icon.ms-1(hidden='')
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      i.position-absolute.fa-solid.fa-eye.form_icon.see_Password
+      input#signup__form__password_input.char_input(type='password' name='' placeholder='enter your password' required='')
+      label.position-absolute.char_label(for='signup__form__password_input') Password
+      i.position-absolute.fa-solid.fa-lock.form_icon
+      i.fa-solid.fa-circle-check.check_icon.ms-1(hidden='')
+    span#password_status.ms-3(hidden='')
+    .d-flex.justify-content-around.align-items-center.mt-4.position-relative
+      input#signup__form__remember_input.remember_input(type='checkbox' name='' hidden='')
+      i.fa-solid.fa-circle-check.check_icon.ms-1
+      label.user-select-none.ms-2(for='signup__form__remember_input') Remember me !
+      a.text-decoration-none.mx-auto.forgot_link(href='#') Forgot password?
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      input.btn.btn-info.rounded-pill(type='submit' value='Submit')
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      p.text-white
+        span Already a member?
+        a#login_ct_link.ps-2.text-decoration-none.text-peru.fw-bold(href='#') Log In
+  form#login__form.animate__animated.d-flex.justify-content-center.flex-column.position-absolute.rounded.p-4.text-info(action='' method='post' autocomplete='off')
+    section#login__form__header.d-flex.justify-content-between.align-items-center
+      h2#login__form__heading.user-select-none.animate__animated.animate__tada.animate__delay-1s Login
+      #login__form__social__buttons
+        button.btn.btn-info
+          a.text-white(tabindex='-1' href='#')
+            i.fa-brands.fa-google
+        button.btn.btn-info
+          a.text-white(tabindex='-1' href='#')
+            i.fa-brands.fa-facebook-f
+        button.btn.btn-info
+          a.text-white(tabindex='-1' href='#')
+            i.fa-brands.fa-github
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      input#login__form__email__input.char_input(type='email' name='' placeholder='enter your email' required='')
+      label.position-absolute.char_label(for='login__form__email__input') Email
+      i.position-absolute.fa-solid.fa-at.form_icon
+      i.fa-solid.fa-circle-check.check_icon.ms-1(hidden='')
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      i.position-absolute.fa-solid.fa-eye.form_icon.see_Password
+      input#login__form__password_input.char_input(type='password' name='' placeholder='enter your password' required='')
+      label.position-absolute.char_label(for='login__form__password_input') Password
+      i.position-absolute.fa-solid.fa-lock.form_icon
+      i.fa-solid.fa-circle-check.check_icon.ms-1(hidden='')
+    .d-flex.justify-content-around.align-items-center.mt-4.position-relative
+      input#login__form__remember_input.remember_input(type='checkbox' name='' hidden='')
+      i.fa-solid.fa-circle-check.check_icon.ms-1
+      label.user-select-none.ms-2(for='login__form__remember_input') Remember me !
+      a.text-decoration-none.mx-auto.forgot_link(href='#') Forgot password?
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      input.btn.btn-info.rounded-pill(type='submit' value='login')
+    .d-flex.justify-content-center.align-items-center.mt-4.position-relative
+      p.text-white
+        span Not registered?
+        a#sign_up_ct_link.ps-2.text-decoration-none.text-peru(href='#') Create an account!
