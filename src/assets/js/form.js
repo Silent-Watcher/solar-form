@@ -138,6 +138,7 @@ audio_btn.addEventListener('click', function () {
     this.firstChild.classList.add('fa-volume-xmark');
     audio.muted = true;
   } else {
+    this.classList.add('pulse');
     this.classList.remove('disable', 'text-danger', 'bg-transparent');
     this.firstChild.classList.remove('fa-volume-xmark');
     audio.muted = false;
