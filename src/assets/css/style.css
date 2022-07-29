@@ -247,6 +247,20 @@ label.char_label::before {
   margin-right: 5px;
 }
 
+#copyright {
+  padding-top: 60px;
+}
+#copyright > span {
+  color: #fdac5b;
+}
+#copyright > a {
+  color: #cd853f;
+  transition: 0.5s ease;
+}
+#copyright > a:hover {
+  color: #fdac5b;
+}
+
 #solar_system_wrapper {
   z-index: 100;
 }

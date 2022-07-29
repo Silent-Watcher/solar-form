@@ -6,13 +6,10 @@ html(lang="en")
         audio(src="assets/audio/spaceship-cruising-ufo-7176 (1).mp3" loop controlsList="nodownload")
         .container-fluid 
             .container
-                .row.p-2
-                    .z-100.p-2#sound_effect 
-                        button.pulse.btn.btn-outline-warning.rounded-circle.btn-lg.z-100.text-white#sound_effect_button( data-bs-toggle="tooltip" data-bs-title="Do you hear that voice? 😐")
-                            i.fa-solid.fa-volume-high
+                include includes/components/_audioBtn
                 main.row.d-flex.justify-content-center.align-items-center  
-                    section.d-none.d-lg-block.col-lg-6.col-xl-7.h-100.user-select-none.z-100#solar_system_wrapper 
-                        img.img-fluid(src="assets/img/solar-system-animation -transparent.svg", alt="solar_system")
+                    include includes/components/_solarImage
                     section.col-12.col-lg-6.col-xl-5.align-self-start.z-100#form_wrapper
                             include includes/components/_form
+                include includes/components/_copyright
     include includes/_scripts
