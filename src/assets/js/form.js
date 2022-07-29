@@ -230,3 +230,17 @@ showLoginBtn.addEventListener('click', function (e) {
   loginForm.classList.add('animate__fadeIn');
 });
 // form animations
+// detect caps lock
+document.addEventListener('keyup', (event) => {
+  let capsLockTxtMsgs = Array.from(document.getElementsByClassName('capsLockTextMsg'));
+  if (event.getModifierState('CapsLock')) {
+    capsLockTxtMsgs.map(function(capsLockTxtMsg){
+      capsLockTxtMsg.hidden = false;
+    });
+  }else{
+    capsLockTxtMsgs.map(function(capsLockTxtMsg){     
+      capsLockTxtMsg.hidden = true;
+      });
+    }
+});
+// detect caps lock

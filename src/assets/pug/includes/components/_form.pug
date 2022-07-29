@@ -1,5 +1,6 @@
 main#form_container.position-relative.w-100
   form#signup__form.animate__animated.d-flex.justify-content-center.flex-column.position-absolute.rounded.p-4.text-info(action='' method='post' autocomplete='off')
+    span.animate__animated.capsLockTextMsg.pt-4(hidden) CapsLock is on!
     section#signup__form__header.d-flex.justify-content-between.align-items-center
       h2#signup__form__heading.user-select-none.animate__animated.animate__tada.animate__delay-1s signUp
       #signup__form__social__buttons
@@ -41,6 +42,7 @@ main#form_container.position-relative.w-100
         span Already a member?
         a#login_ct_link.ps-2.text-decoration-none.text-peru.fw-bold(href='#') Log In
   form#login__form.animate__animated.d-flex.justify-content-center.flex-column.position-absolute.rounded.p-4.text-info(action='' method='post' autocomplete='off')
+    span.capsLockTextMsg.mb-2.pb-4(hidden) CapsLock is on!
     section#login__form__header.d-flex.justify-content-between.align-items-center
       h2#login__form__heading.user-select-none.animate__animated.animate__tada.animate__delay-1s Login
       #login__form__social__buttons
